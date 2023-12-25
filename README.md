@@ -1,9 +1,9 @@
 ## 👋 Hi there, I'm Seven!
 
-Nice to meet you! My name is Seven SUN, a 15 y.o. student studying Ontario Secondary School Courses.
+Nice to meet you!
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="snake.svg" />
-  <img alt="github-snake" src="snake.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/realSunyz/realSunyz/snake/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/realSunyz/realSunyz/snake/snake.svg" />
+  <img alt="github-snake" src="https://raw.githubusercontent.com/realSunyz/realSunyz/snake/snake.svg" />
 </picture>
