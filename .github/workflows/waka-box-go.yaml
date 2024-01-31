@@ -1,4 +1,4 @@
-name: wakatime
+name: waka-box-go
 
 on:
   schedule:
@@ -9,18 +9,15 @@ on:
       - main
 
 jobs:
+
   build:
-    name: Update-gist
+    name: Update README.md
     runs-on: ubuntu-latest
     env:
       WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
       UPDATE_OPTION: MARKDOWN
       MARKDOWN_FILE: README.md
-      GIST_ID: 
-      GIST_BARSTYLE: 
-      GIST_BARLENGTH: 
-      GIST_TIMESTYLE: 
 
     steps:
       - name: Set up Go 1.x
