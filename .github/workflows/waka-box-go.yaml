@@ -2,7 +2,7 @@ name: wakatime
 
 on:
   schedule:
-    - cron: "0 0 * * *" 
+    - cron: "0 12 * * *" 
    
   push:
     branches:
@@ -62,11 +62,8 @@ jobs:
       - name: Commit and push
         run: |-
           ./waka
-          git config --global user.email '$GIT_COMMITTER_EMAIL'
-          git config --global user.name '$GIT_COMMITTER_NAME'
+          git config --global user.email "i+github@sunyz.net"
+          git config --global user.name "realSunyz's GitHub Bot"
           git diff
           git add README.md && git commit -m "[±] Scheduled waka-box-go update" || exit 0
           git pull && git push
-        env:
-          GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
-          GIT_COMMITTER_NAME: ${{ secrets.GIT_COMMITTER_NAME }}
