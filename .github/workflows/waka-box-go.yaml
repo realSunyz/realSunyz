@@ -12,12 +12,16 @@ jobs:
   build:
     name: Update README.md
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     env:
       WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
       UPDATE_OPTION: MARKDOWN
       MARKDOWN_FILE: README.md
 
     steps:
+
       - name: Set up Go environment
         uses: actions/setup-go@v5
         with:
@@ -27,15 +31,40 @@ jobs:
       - name: Check out repo
         uses: actions/checkout@v4
       - uses: actions/setup-go@v5
+
+      - name: Import GPG key
+        run: echo $GPG_KEY | base64 --decode | gpg --batch --import
+        env:
+          GPG_KEY: ${{ secrets.GPG_KEY }}
+
+      - name: Add the custom GPG siging program
+        run: |
+          rm -rf /tmp/gpg.sh
+          echo '#!/bin/bash' >> /tmp/gpg.sh
+          echo 'gpg --batch --pinentry-mode=loopback $@' >> /tmp/gpg.sh
+          chmod +x /tmp/gpg.sh
+        
+      - name: Setup git
+        run: |
+          git config commit.gpgsign true
+          git config user.signingkey $GPG_KEY_ID
+          git config gpg.program /tmp/gpg.sh
+        env:
+          GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
+
       - name: Clone and run waka-box
         run: |-
           git clone https://github.com/realSunyz/waka-box-go.git
           cd waka-box-go && go build -o waka ./cmd/box/main.go
           mv ./waka ../ && cd .. && rm -rf waka-box-go/
+      
       - name: Commit and push
         run: |-
           ./waka
-          git config --global user.email "bot@github.com" && git config --global user.name "Waka-Bot"
+          git config --global user.email $GIT_COMMITTER_EMAIL && git config --global user.name $GIT_COMMITTER_NAME
           git diff
           git add README.md && git commit -m "[±] Scheduled waka-box-go update" || exit 0
           git pull && git push
+        env:
+          GIT_COMMITTER_EMAIL: ${{ secrets.GIT_COMMITTER_EMAIL }}
+          GIT_COMMITTER_NAME: ${{ secrets.GIT_COMMITTER_NAME }}
