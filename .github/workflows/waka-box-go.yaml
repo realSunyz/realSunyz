@@ -31,39 +31,30 @@ jobs:
 
       - name: Check out repo
         uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
 
       - name: Import GPG key
         run: echo $GPG_KEY | base64 --decode | gpg --batch --import
         env:
           GPG_KEY: ${{ secrets.GPG_KEY }}
-
-      - name: Add the custom GPG siging program
-        run: |
-          rm -rf /tmp/gpg.sh
-          echo '#!/bin/bash' >> /tmp/gpg.sh
-          echo 'gpg --batch --pinentry-mode=loopback $@' >> /tmp/gpg.sh
-          chmod +x /tmp/gpg.sh
         
-      - name: Setup git
+      - name: Setup git environment
         run: |
           git config commit.gpgsign true
           git config user.signingkey $GPG_KEY_ID
-          git config gpg.program /tmp/gpg.sh
+          git config --global user.email "i+github@sunyz.net"
+          git config --global user.name "realSunyz's GitHub Bot"
         env:
           GPG_KEY_ID: ${{ secrets.GPG_KEY_ID }}
 
-      - name: Clone and run waka-box
+      - name: Clone and run waka-box-go
         run: |-
           git clone https://github.com/realSunyz/waka-box-go.git
           cd waka-box-go && go build -o waka ./cmd/box/main.go
           mv ./waka ../ && cd .. && rm -rf waka-box-go/
+          ./waka
       
       - name: Commit and push
         run: |-
-          ./waka
-          git config --global user.email "i+github@sunyz.net"
-          git config --global user.name "realSunyz's GitHub Bot"
           git diff
           git add README.md && git commit -m "[±] Scheduled waka-box-go update" || exit 0
           git pull && git push
