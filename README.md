@@ -29,7 +29,8 @@ btw., I have a [blog](https://sunyz.net), check it out?
 ### 🕳️ weekly development
 <!-- waka-box start -->
 ```text
-Still Gathering Statistics...
+Python 🕓 1 hr 13 mins ███████████████████▊░ 94.2%
+C++    🕓 4 mins       █▏░░░░░░░░░░░░░░░░░░░  5.8%
 ```
 <!-- Powered by https://github.com/realSunyz/waka-box-go . -->
 <!-- waka-box end -->
