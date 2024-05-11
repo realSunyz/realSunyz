@@ -29,7 +29,8 @@ btw., I have a [blog](https://sunyz.net), check it out?
 ### 🕳️ weekly development
 <!-- waka-box start -->
 ```text
-Still Gathering Statistics...
+Markdown   🕓 15 mins ███████████████████▎░ 92.2%
+Git Config 🕓 1 min   █▋░░░░░░░░░░░░░░░░░░░  7.8%
 ```
 <!-- Powered by https://github.com/realSunyz/waka-box-go . -->
 <!-- waka-box end -->
