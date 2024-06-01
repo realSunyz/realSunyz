@@ -1,12 +1,13 @@
 ## 👋 Hi there, I'm Seven.
 
 I'm Seven SUN, a Grade 10 secondary school student.  
-btw., I have a [blog](https://sunyz.net), check it out?
+btw., I have a [website](https://sunyz.net), check it out?
 
 ### 💬 i can speak
 
 🇨🇳 Mandarin Chinese (aka. Putonghua)  
-🇨🇦 English (Canada)
+🇨🇦 English  
+🇫🇷 French (learning)
 
 ### 👩‍💻 i can use
 
