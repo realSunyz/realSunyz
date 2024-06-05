@@ -30,11 +30,11 @@ btw., I have a [website](https://sunyz.net), check it out?
 ### 🕳️ weekly development
 <!-- waka-box start -->
 ```text
-Astro       🕓 10 hrs 54 mins ███████████████▏░░░░░ 72.3%
-JSON        🕓 1 hr 1 min     █▍░░░░░░░░░░░░░░░░░░░  6.7%
-JavaScript  🕓 40 mins        ▉░░░░░░░░░░░░░░░░░░░░  4.5%
-Image (svg) 🕓 33 mins        ▊░░░░░░░░░░░░░░░░░░░░  3.7%
-Markdown    🕓 30 mins        ▋░░░░░░░░░░░░░░░░░░░░  3.4%
+Astro       🕓 6 hrs 22 mins ███████████████▏░░░░░ 72.0%
+JSON        🕓 40 mins       █▌░░░░░░░░░░░░░░░░░░░  7.6%
+JavaScript  🕓 34 mins       █▎░░░░░░░░░░░░░░░░░░░  6.5%
+CSS         🕓 27 mins       █░░░░░░░░░░░░░░░░░░░░  5.2%
+TypeScript  🕓 18 mins       ▋░░░░░░░░░░░░░░░░░░░░  3.5%
 ```
 <!-- Powered by https://github.com/realSunyz/waka-box-go . -->
 <!-- waka-box end -->
