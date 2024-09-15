@@ -1,6 +1,6 @@
 ## 👋 Hi there, I'm Seven.
 
-I'm Seven SUN, a Grade 10 secondary school student.  
+I'm Seven SUN, a Grade 11 secondary school student.  
 btw., I have a [website](https://sunyz.net), check it out?
 
 ### 💬 i can speak
@@ -11,8 +11,9 @@ btw., I have a [website](https://sunyz.net), check it out?
 
 ### 👩‍💻 i can use
 
-![Programming Languages](https://skillicons.dev/icons?i=cpp,html,python,bash,md,latex)  
-![Softwares](https://skillicons.dev/icons?i=ai,pr,ps,xd,figma,vscode)
+![Programming Language](https://skillicons.dev/icons?i=cpp,html,python,nodejs,nextjs,tailwind,bash,latex,md)  
+![Service](https://skillicons.dev/icons?i=docker,git,nginx,cloudflare,workers,github,linux,vercel,mysql)  
+![Software](https://skillicons.dev/icons?i=ai,pr,ps,xd,figma,vim,vscode,pycharm,clion)
 
 ### 🌍 get in touch
 
