@@ -1,3 +1,4 @@
+<!-- DON'T FORGET TO PULL BEFORE PUSHING -->
 ## 👋 Hi there, I'm Seven.
 
 I'm Seven SUN, a Grade 11 secondary school student.  
