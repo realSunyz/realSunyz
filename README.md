@@ -5,9 +5,9 @@ btw., I have a [website](https://sunyz.net), check it out?
 
 ### 💬 i can speak
 
-🇨🇳 Mandarin Chinese (aka. Putonghua)  
-🇨🇦 English  
-🇫🇷 French (learning)
+* 🇨🇳 Simplified Chinese (Mandarin)  
+* 🇺🇸 English (United States)  
+* 🇫🇷 French (learning)
 
 ### 👩‍💻 i can use
 
@@ -17,7 +17,7 @@ btw., I have a [website](https://sunyz.net), check it out?
 
 ### 🌍 get in touch
 
-* Email i@sunyz.net
+* Email <i@sunyz.net>
 * Telegram [@realSunyz](https://t.me/realSunyz)
 * Discord `realSunyz`
 
@@ -31,11 +31,11 @@ btw., I have a [website](https://sunyz.net), check it out?
 ### 🕳️ weekly development
 <!-- waka-box start -->
 ```text
-Astro      🕓 1 hr 17 mins ██████████▎░░░░░░░░░░ 49.2%
-JavaScript 🕓 1 hr         ████████░░░░░░░░░░░░░ 38.3%
-Docker     🕓 10 mins      █▍░░░░░░░░░░░░░░░░░░░  6.9%
-Markdown   🕓 3 mins       ▌░░░░░░░░░░░░░░░░░░░░  2.5%
-Other      🕓 2 mins       ▎░░░░░░░░░░░░░░░░░░░░  1.3%
+Astro       🕓 10 hrs 49 mins ███████████████▎░░░░░ 73.0%
+JSON        🕓 1 hr 1 min     █▍░░░░░░░░░░░░░░░░░░░  6.9%
+JavaScript  🕓 40 mins        ▉░░░░░░░░░░░░░░░░░░░░  4.6%
+Image (svg) 🕓 33 mins        ▊░░░░░░░░░░░░░░░░░░░░  3.8%
+TypeScript  🕓 29 mins        ▋░░░░░░░░░░░░░░░░░░░░  3.4%
 ```
 <!-- Powered by https://github.com/realSunyz/waka-box-go . -->
 <!-- waka-box end -->
