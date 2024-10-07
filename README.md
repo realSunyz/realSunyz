@@ -32,8 +32,7 @@ btw., I have a [website](https://sunyz.net), check it out?
 ### 🕳️ weekly development
 <!-- waka-box start -->
 ```text
-HTML 🕓 7 mins ███████████▎░░░░░░░░░ 53.7%
-CSS  🕓 6 mins █████████▋░░░░░░░░░░░ 46.3%
+Still Gathering Statistics...
 ```
 <!-- Powered by https://github.com/realSunyz/waka-box-go . -->
 <!-- waka-box end -->
