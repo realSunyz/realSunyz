@@ -1,11 +1,11 @@
 ## 👋 Hi there, I'm Seven.
 
-I'm Seven SUN, a Grade 12 secondary school student.  
+I'm Seven, a Grade 12 secondary school student.  
 
 ### 💬 i can speak
 
-* 🇨🇳 Simplified Chinese (Mandarin)  
-* 🇺🇸 English 
+* 🇨🇳 Mandarin Chinese (native)  
+* 🇺🇸 English (level C1)
 * 🇫🇷 French (learning)
 
 ### 👩‍💻 i can use
